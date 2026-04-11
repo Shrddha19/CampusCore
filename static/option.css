@@ -1,0 +1,63 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full screen */
+body {
+    height: 100vh;
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(135deg, #8360c3, #2ebf91);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main container */
+.option-page {
+    text-align: center;
+    color: white;
+}
+
+/* Heading */
+h1 {
+    margin-bottom: 10px;
+}
+
+h4 {
+    margin-bottom: 20px;
+}
+
+/* Flash message */
+.flash {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+/* Links */
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Buttons style links */
+.links a {
+    text-decoration: none;
+    background: white;
+    color: #2ebf91;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.links a:hover {
+    background: #eee;
+}

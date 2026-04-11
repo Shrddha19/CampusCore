@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='option.css') }}">
+    
+    <title>Options</title>
+</head>
+<body>
+
+    <div class="option-page">
+
+        <!-- Flash Messages -->
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for msg in messages %}
+                <div class="flash">{{ msg }}</div>
+            {% endfor %}
+        {% endif %}
+        {% endwith %}
+
+        <h1>Welcome To Our Website</h1>
+        <h4>Select Option for further process</h4>
+
+        <div class="links">
+            <a href="/add">Add Student</a>
+            <a href="/view">View Student</a>
+            <a href="/update">Update Student</a>
+            <a href="/delete">Delete Student</a>
+            <a href="/">Back</a>
+        </div>
+
+    </div>
+
+</body>
+</html>

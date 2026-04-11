@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='update.css') }}">
+    
+    <title>Update Student</title>
+</head>
+<body>
+
+    <form action="/update" method="POST" class="update-page">
+
+        <h1>Update Student Record</h1>
+
+        <div class="input-group">
+            <label>Enter Name</label>
+            <input type="text" name="n" required>
+        </div>
+
+        <div class="input-group">
+            <label>Roll No</label>
+            <input type="number" name="no" required>
+        </div>
+
+        <div class="input-group">
+            <label>Updated Mark</label>
+            <input type="number" name="m" required>
+        </div>
+
+        <button type="submit">Submit</button>
+
+        <div class="links">
+            <a href="/option">Back</a>
+        </div>
+
+    </form>
+
+</body>
+</html>

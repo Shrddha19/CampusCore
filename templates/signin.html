@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='sign.css') }}">
+    
+    <title>Sign In</title>
+</head>
+<body>
+
+    <form method="POST" class="sign-page">
+
+        <h1>Sign In</h1>
+
+        <div class="input-group">
+            <label>Name</label>
+            <input type="text" name="name" required>
+        </div>
+
+        <div class="input-group">
+            <label>Password</label>
+            <input type="password" name="password" required>
+        </div>
+
+        <button type="submit">Sign In</button>
+
+        <p class="login-link">
+            Already have an account? <a href="/login">Log In</a>
+        </p>
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='add.css') }}">
+    
+    <title>Add Student</title>
+</head>
+<body>
+
+    <form action="/add" method="POST" class="add-page">
+
+        <h1>Thanks For Connecting With Us</h1>
+
+        <div class="input-group">
+            <label>Student Name</label>
+            <input type="text" name="student" required>
+        </div>
+
+        <div class="input-group">
+            <label>Student Roll No</label>
+            <input type="number" name="PRN" required>
+        </div>
+
+        <div class="input-group">
+            <label>Student Course</label>
+            <input type="text" name="course" required>
+        </div>
+
+        <div class="input-group">
+            <label>Student Mark</label>
+            <input type="number" name="mark" required>
+        </div>
+
+        <button type="submit">Submit</button>
+
+        <div class="links">
+            <a href="/option">Back</a>
+            <a href="/logout">Log Out</a>
+        </div>
+
+    </form>
+
+</body>
+</html>
